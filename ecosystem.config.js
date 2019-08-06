@@ -6,7 +6,7 @@ module.exports = {
   deploy: {
     production: {
       user: 'ubuntu',
-      host: 'ec2-13-58-209-69.us-east-2.compute.amazonaws.com',
+      host: 'ec2-18-218-58-126.us-east-2.compute.amazonaws.com',
       key: '~/.ssh/hpineda_0.pem',
       ref: 'origin/master',
       repo: 'git@github.com:herman-19/Node.js-server-on-AWS',
