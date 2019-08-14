@@ -14,7 +14,7 @@ const urlEncodedParser = bodyParser.urlencoded({extended: false})
 // we get a post request to the route /sensorData. It will parse data.
 app.post('/sensorData', urlEncodedParser, (req, res) => {
   console.log(req.body) // will log the data posted to us.
-  // res.render(...)
+  res.send('RESPONSE!')
 })
 
 app.use(express.static('public'))
