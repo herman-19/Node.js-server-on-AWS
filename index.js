@@ -15,7 +15,7 @@ const urlEncodedParser = bodyParser.urlencoded({extended: false});
 // we get a post request to the route /sensorData. It will parse data.
 app.post('/sensorData', urlEncodedParser, (req, res) => {
   console.log(req.body);
-  fs.appendFile('SensorData.txt', req.body, 'utf8',
+  fs.appendFile('SensorData.txt', req.body.temp, 'utf8',
     // Callback function
     function(err){
       if(err) throw err;
