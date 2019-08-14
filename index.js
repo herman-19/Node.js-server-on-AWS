@@ -5,9 +5,9 @@ const bodyParser = require('body-parser')
 // The middleware below is used to parse the post data
 const urlEncodedParser = bodyParser.urlencoded({extended: false})
 
-app.get('/', (req, res) => {
-   res.send('HEY!')
-})
+//app.get('/', (req, res) => {
+//   res.send('HEY!')
+//})
 
 
 // Post Handler--Note: urlEncodedParser will be kicked off everytime
