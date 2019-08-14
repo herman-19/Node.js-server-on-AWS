@@ -6,10 +6,6 @@ const fs         = require('fs');
 // The middleware below is used to parse the post data
 const urlEncodedParser = bodyParser.urlencoded({extended: false});
 
-//app.get('/', (req, res) => {
-//   res.send('HEY!')
-//})
-
 
 // Post Handler--Note: urlEncodedParser will be kicked off everytime
 // we get a post request to the route /sensorData. It will parse data.
