@@ -19,7 +19,8 @@ app.post('/sensorData', urlEncodedParser, (req, res) => {
     // Callback function
     function(err){
       if(err) throw err;
-  );
+    }
+   );
   res.send('[Server]: Data stored!');
 });
 
