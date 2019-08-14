@@ -16,7 +16,7 @@ const urlEncodedParser = bodyParser.urlencoded({extended: false});
 app.post('/sensorData', urlEncodedParser, (req, res) => {
   console.log(req.body);
   fs.appendFile('SensorData.txt', 'Temperature: ' + req.body.temp + ' F, ' 
-                + 'Humidity: ' + req.body.humidity + '%RH\n', 'utf8',
+                + 'Humidity: ' + req.body.humidity + ' %RH\n', 'utf8',
     // Callback function
     function(err){
       if(err) throw err;
